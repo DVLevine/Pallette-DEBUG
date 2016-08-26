@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <service uuid="1800">
+      <description>Generic Access Profile</description>
+
+      <characteristic uuid="2a00">
+        <properties read="true" const="true" />
+        <value>Pallette Debug</value>
+      </characteristic>
+
+      <characteristic uuid="2a01">
+        <properties read="true" const="true" />
+        <value type="hex">0001</value>
+      </characteristic>
+    </service>
+
+	<service uuid="00432c4a-a7a4-428b-a96d-d92d43c8c7cf" advertise="true" id="sensors">
+    <characteristic uuid="00432c4a-a7a4-428b-a96d-d92d43c8c7ci" id="xgatt_sensor1_write">
+        <description>Written Data</description>
+        <properties read="true" notify="true" />
+        <value type="utf-8" length="20">Oliver</value>
+    </characteristic>
+  </service>
+
+</configuration>
